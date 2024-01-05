@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nupur's Web Portfolio</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://kit.fontawesome.com/8cfec7168c.js" crossorigin="anonymous"></script>
+    </head>    
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                  <h1 class="initial">N.</h1>
+                    <ul id="sidemenu">
+                        <li><a class="active" href="#header"><i class="fa fa-fw fa-home"></i> HOME</a></li>                        
+                        <li><a href="#about"><i class="fa-regular fa-address-card"></i> ABOUT ME</a></li>
+                        <li><a href="#services"><i class="fa-regular fa-rectangle-list"></i> SERVICES</a></li>
+                        <li><a href="#portfolio"><i class="fa-brands fa-dropbox"></i> PORTFOLIO</a></li>
+                        <li><a href="#contact"><i class="fa-regular fa-address-book"></i> CONTACT ME</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <div class="bars">   
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </div>
+                </nav>
+                <div class="header-text">
+                    <img src="images/bg1.jpg" class="logo">
+                    <h1>Hi, I'm <span>Nupur.</span></h1>
+                    <p>Front-End and Full-stack Developer</p>
+                    <h5 class="typed">Welcome to My Portfolio Website!</h5>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------ABOUT ME SECTION------------------------------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/aboutMe.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">ABOUT ME</h1>
+                        <p>As a passionate and motivated web developer, I am eager to kickstart my career in the ever-evolving world of web development. With a strong foundation in HTML, CSS, JavaScript, PHP and Bootstrap, I am dedicated to creating engaging and user-friendly websites.
+                            I thrive on challenges and am committed to staying updated with the latest technologies to deliver cutting-edge solutions. 
+                            I am excited to collaborate with teams and bring creative ideas to life.
+                            Let's connect and explore opportunities together!</p>                     
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                            <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                            <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        </div>
+<!----------------------------------------SKILLS CONTENT----------------------------------------------->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> <b><i class="fa-solid fa-code"></i> HTML, CSS, and, JavaScript </b></span><br> Proficient in foundational technologies of Web Development</li>
+                                <li><span> <b><i class="fa-solid fa-tachograph-digital"></i> Programming and Frameworks </b></span><br> Enhanced productivity and code organization</li>                               
+                                <li><span> <b><i class="fa-solid fa-chalkboard"></i> Responsive Design and Cross-Browser Compatibility </b></span><br>Maintained design principles and ensured browser's compatibility</li>
+                                <li><span> <b><i class="fa-brands fa-github"></i> Version Control/ Git </b></span><br> Utilized and managed repositories on GitHub</li>
+                                <li><span> <b><i class="fa-solid fa-bug-slash"></i> Problem-solving and Debugging </b></span><br> Efficiently troubleshoot and debug issues</li>
+                            </ul>
+                        </div>
+<!-------------------------------------EXPERIENCE CONTENT---------------------------------------------->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> <b>Web Developer</b></span><br> Dave Solutions, Hamilton, ON </li>
+                                <li><span> <b>Full-stack Developer </b></span><br> ClickAway IT Solutions, Ahmedabad, India</li>                                        
+                            </ul>
+                        </div>
+<!-------------------------------------EDUCATION CONTENT----------------------------------------------->                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span> 
+                                    <b>Diploma in Computer Programming </b></span><br> 
+                                  <i class="fa-solid fa-graduation-cap"></i> Sheridan College, Oakville, ON</li>
+                                <li><span> <b>Diploma in Computer Engineering </b></span><br>
+                                    <i class="fa-solid fa-building-columns"></i>  LJ Politechnic, Ahmedabad, India </li>                                          
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-----------------------------------------SERVICES---------------------------------------------------->
+       <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div><i class="fa-solid fa-code"></i>
+                        <h2>WEB DEVELOPER/ DESIGNER</h2>
+                        <p>As a Web Developer, I am a code maestro shaping digital realms with a blend of creativity and precision.
+                        Proficient in HTML, CSS, and JavaScript, I transform concepts into seamless, user-centric experiences. 
+                        With an eye for design and a passion for innovation, I navigate the ever-evolving landscape of web technologies. 
+                        From responsive interfaces to dynamic functionalities, I am dedicated to crafting compelling online experiences that leave a lasting impact.
+                        Welcome to the digital canvas where I turn ideas into interactive realities.</p>
+                        <a href="#contact">Know More!?</a>
+                    </div>
+                    <div><i class="fa-solid fa-code"></i>
+                        <h2>FULL STACK DEVELOPER</h2>
+                        <p>As a Full-Stack Developer, I am a versatile architect of digital solutions, proficient in both front-end and back-end technologies. 
+                            With expertise in HTML, CSS, JavaScript, and server-side languages, I bring a holistic approach to web development. 
+                            From designing engaging user interfaces to optimizing server performance, I thrive on creating seamless, end-to-end experiences. My passion lies in navigating the dynamic landscape of technology to build innovative and scalable solutions that elevate user interactions.</p>
+                        <a href="#contact">Know More!?</a>
+                    </div>
+                    <div><i class="fa-solid fa-code"></i>
+                        <h2>FRONT END DEVELOPER</h2>
+                        <p> As a Front-End Developer, I sculpt digital experiences that captivate and engage.
+                            Proficient in HTML, CSS, and JavaScript, I bridge design and functionality, ensuring seamless user interactions.
+                            With a passion for responsive and intuitive interfaces, I transform ideas into visually stunning and user-friendly websites. 
+                            Constantly adapting to evolving technologies, I thrive on creating dynamic, innovative solutions that elevate the user experience and bring a touch of creativity to the online world.</p>
+                        <a href="#contact">Know More!?</a>
+                    </div>
+                </div>
+            </div>
+       </div>
+<!-----------------------------------------PORTFOLIO--------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project1.png" alt="">
+                <div class="layer">
+                    <h3>PROJECT 1</h3>
+                    <p>Unleash creativity with stunning visuals, a photographer's haven online.</p>
+                    <a href="project1.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project2.png" alt="">
+                <div class="layer">
+                    <h3>PROJECT 2</h3>
+                    <p>Clickable hotspots on fashion items that lead to product pages.</p>
+                    <a href="project2.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project4.png" alt="">
+                <div class="layer">
+                    <h3>PROJECT 3</h3>
+                    <p>Elevate your wedding experience with our meticulously crafted pieces, where dreams come to life. </p>
+                    <a href="project3.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project3.png" alt="">
+                <div class="layer">
+                    <h3>PROJECT 4</h3>
+                    <p>Creating images that resonate with a profound and mysterious beauty.</p>
+                    <a href="project4.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project5.png" alt="">
+                <div class="layer">
+                    <h3>PROJECT 5</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it to the play store. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------------------------------------CONTACT---------------------------------------------------->
+<div id="contact">
+    <h4>Get In Touch</h4>
+    <h6>Want to get in touch? I'd love to hear from you. Here's how  you can reach me...</h6>
+    <div class="container">
+           
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Information</h1>            
+                <p><i class="fa-solid fa-envelope"></i>nup29patel@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+1(905)517-0005</p>
+                <!---<p><i class="fa-solid fa-location-dot"></i>Canada</p>-->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nupurpatel2910/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/nup29"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <div class="myDIV">
+                <a href="images/Nupur_Patel_Web_Developer.pdf"  class="btn btn2" download>Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="hide">Take a look at my Resume!</div>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required/>
+                    <input type="email" name="Email" placeholder="Email" required/>
+                    <textarea name="Message" rows="6" placeholder="Write your message here"></textarea>
+                    <button type="submit" class="btn btn3">Send me the message&nbsp;&nbsp;<i class="fa fa-paper-plane"></i>
+                    </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+    </button> 
+</div>
+    <div class="copyright">
+        <p>Copyright © Nupur Patel. All Rights Reserved <i class="fa-solid fa-heart"></i> </p>
+    </div>
+
+<script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+</script>
+<script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxMdZBLYmFrR325a-LFvi-cPuB9-KYtUxmoe-VyYW3TQOz9TeLY4HZA2ssIeWhE1jbrQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    </body>
+</html>
